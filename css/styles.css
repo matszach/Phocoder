@@ -1,0 +1,52 @@
+.float-left-div {
+    float: left;
+    height: 100vh;
+}
+
+#code-editor {
+    width: 39.5vw;
+}
+
+#vertical-resize-bar {
+    width: 0.5vw;
+}
+
+#io-display {
+    width: 60vw;
+}
+
+#horisontal-resize-bar,
+#vertical-resize-bar {
+    background-color: blueviolet;
+}
+
+textarea {
+    resize: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    border: 1px solid gray;
+}
+
+#code-area {
+    height: 100vh;
+}
+
+#input-div {
+    height: 40vh;
+    width: 100%;
+}
+
+#horisontal-resize-bar {
+    height: 0.5vw;
+    width: 100%;
+} 
+
+#output-div {
+    height: calc(60vh - 0.5vw); 
+    width: 100%;
+}
+
+#input-div, #output-div {
+    overflow: scroll;
+}

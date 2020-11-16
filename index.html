@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Phocoder</title>
+        <!-- STYLES -->
+        <link rel="stylesheet" href="css/default.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <!-- LIB -->
+        <script src="js/lib/gmt.js"></script>
+        <script src="js/lib/jquery.js"></script>
+        <!-- SRC -->
+        <script src="js/src/const.js"></script>
+        <script src="js/src/editor.js"></script>
+        <script src="js/src/io.js"></script>
+    </head>
+    <body>
+        <!-- code editor -->
+        <div class='float-left-div' id='code-editor'>
+            <textarea class='code-area' id='code-area'></textarea>
+        </div>
+        <!-- resizer bar -->
+        <div class='float-left-div' id='vertical-resize-bar'></div>
+        <!-- photo displayer -->
+        <div class='float-left-div' id='io-display'>
+            <!-- input  -->
+            <div id='input-div'>
+                <input type='file' id='file-input' onchange="FileIO.onInput(this)"/>
+                <br>
+                <img id='file-input-display' src='#' alt='your input image'/>
+            </div>
+            <!-- resizer bar -->
+            <div id='horisontal-resize-bar'></div>
+            <!-- output -->
+            <div id='output-div'>
+                <input type='button' id='file-output' onclick="FileIO.onConvert(this)" value='Convert'/>
+                <br>
+                <img id='file-output-display' src='#' alt='your output image'/>
+            </div>
+        </div>
+        <!-- MAIN -->
+        <script src="js/src/main.js"></script>
+    </body>
+</html>
